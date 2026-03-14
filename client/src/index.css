@@ -1,0 +1,34 @@
+@import "tailwindcss";
+
+@theme {
+  --color-maroon: #7B1E2B;
+  --color-maroon-light: #9B3344;
+  --color-maroon-dark: #5A1520;
+  --color-cream: #faf7f5;
+  --font-heading: "Playfair Display", serif;
+  --font-body: "Source Sans 3", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Source Sans 3", sans-serif;
+  color: #1a1a1a;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Playfair Display", serif;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: #7B1E2B;
+  border-radius: 4px;
+}

@@ -1,0 +1,24 @@
+# Dependencies
+node_modules/
+client/node_modules/
+server/node_modules/
+
+# Environment files
+server/.env
+client/.env
+
+# Build outputs
+dist/
+client/dist/
+server/dist/
+
+# Source code we cloned
+source-code/
+
+# Logs
+*.log
+npm-debug.log*
+
+# OS files
+.DS_Store
+Thumbs.db
