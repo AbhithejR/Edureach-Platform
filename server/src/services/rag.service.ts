@@ -32,7 +32,7 @@ const getEmbeddings = () => {
   }
   return new GoogleGenerativeAIEmbeddings({
     apiKey: process.env.GOOGLE_API_KEY,
-    model: "gemini-embedding-001",
+    model: "text-embedding-004",
   });
 };
 
@@ -115,7 +115,7 @@ export const getRAGResponse = async (question: string): Promise<string> => {
     const retrieve = createRetrieveTool(vectorStore);
 
     const model = new ChatGoogleGenerativeAI({
-      model: "gemini-2.5-flash",
+      model: "gemini-1.5-flash",
       temperature: 0.7,
     });
 
