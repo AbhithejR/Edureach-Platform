@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const API = axios.create({
-  baseURL: "https://edureach-backend-5ou1.onrender.com/api",
+  baseURL:"https://edureach-backend-5ou1.onrender.com/api",
 });
 
 API.interceptors.request.use((config) => {

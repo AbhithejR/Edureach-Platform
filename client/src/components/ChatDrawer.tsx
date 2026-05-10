@@ -48,9 +48,8 @@ export default function ChatDrawer({ open, onClose }: ChatDrawerProps) {
     setSending(true);
 
     try {
-      // sendMessage now returns { message: "answer text" }
       const data = await sendMessage(messageText);
-      const botMsg: Message = { id: Date.now() + 1, text: data.message, sender: "bot" };
+      const botMsg: Message = { id: Date.now() + 1, text: data.response || data.message, sender: "bot" };
       setMessages((prev) => [...prev, botMsg]);
     } catch {
       const errorMsg: Message = { id: Date.now() + 1, text: "Sorry, something went wrong. Please try again.", sender: "bot" };
